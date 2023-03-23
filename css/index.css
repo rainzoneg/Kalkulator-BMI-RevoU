@@ -1,0 +1,95 @@
+h1, h2, h3, h4, p, span, a{
+    font-family:"Arial";
+}
+
+/* Menghilangkan underline pada href pada anchor tag */
+a{
+    text-decoration: none;
+}
+
+#calculator, #result{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right:25%;
+    padding-left:25%;
+}
+
+#result{
+    display: none;
+}
+
+.radio_buttons{
+    margin-left:-6px;
+    margin-top:4px;
+}
+
+.form_card, .result_card, #penyakit{
+    background-color: rgb(234, 234, 234);
+    padding: 12px;
+}
+
+.result_card, #penyakit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hasilBmi{
+    font-size:36px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.bold_text{
+    font-weight: bold;
+    font-family:"Arial";
+}
+
+.form_text{
+    width:97%;
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-left:4px;
+    padding-right:4px;
+    margin-top:6px;
+    
+}
+
+.main_button{
+    margin-top:8px;
+    color:white;
+    background-color: rgb(102, 190, 191);
+    padding:8px;
+    padding-left:10px;
+    padding-right:10px;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.reset_button{
+    padding:8px;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+    background-color:rgb(255, 255, 255);
+}
+
+.main_button:hover{
+    background-color:rgb(95, 166, 167);
+}
+
+.reset_button:hover{
+    background-color:azure;
+}
+
+
+/* Responsiveness laman pada device dengan width kecil */
+@media only screen and (max-width: 800px){
+    #calculator, #result{
+        padding-right:8%;
+        padding-left:8%;
+    }
+}
+
